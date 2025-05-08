@@ -51,8 +51,8 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.projectKey=DevOpsOrganization2025_blog-service
-            -Dsonar.organization=devopsorganization2025
+            -Dsonar.projectKey=nt114-specializedproject
+            -Dsonar.organization=nt114-specializedproject
             -Dsonar.java.binaries=target/classes
             -Dsonar.ci.autoconfig.disabled=true
 #      - name: Install Snyk CLI

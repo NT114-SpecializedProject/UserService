@@ -50,7 +50,7 @@ jobs:
         with:
           repository: NT114-SpecializedProject/infrastructures
           ref: 'main'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GIT_TOKEN }}
       -
         name: Update user service manifest
         run: |

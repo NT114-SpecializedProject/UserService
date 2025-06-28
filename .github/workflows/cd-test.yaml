@@ -56,7 +56,7 @@ jobs:
         run: |
           git config --global user.email "datnguyen101004@gmail.com"
           git config --global user.name "datnguyen101004"
-          sed -i 's#datnguyen10102004/user-service:[^[:space:]]*#datnguyen10102004/user-service:${{ github.sha }}' ./test/microservices/user-service/user-service-deploy.yaml
+          sed -i 's#datnguyen10102004/user-service:[^[:space:]]*#datnguyen10102004/user-service:${{ github.sha }}#' ./test/microservices/user-service/user-service-deploy.yaml
           git add ./test/microservices/user-service-deploy.yaml
           if ! git diff --cached --quiet; then
             git commit -m "Update user-service version to test-${{ github.sha }} in test environment"
